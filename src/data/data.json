@@ -1,0 +1,20 @@
+{"poll":
+    {"header" : "Welcome to the awesome poll!",
+    "questions" : [{
+        "question" : "Which do you prefer?",
+        "choices" : [
+            {"value" : "Tacos", "label" : "Tacos"},
+            {"value" : "Pizza", "label" : "Pizza"},
+            {"value" : "Other", "label" : "Other"}
+        ],
+        "correctAnswer" : "Pizza"
+    },
+        {"question" : "What's your favorite color?",
+            "choices" : [
+                {"value" : "Orange", "label" : "Orange"},
+                {"value" : "Blue", "label" : "Blue"}
+            ],
+        "correctAnswer": "Blue"
+        }
+    ]
+}}
