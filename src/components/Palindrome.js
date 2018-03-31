@@ -7,6 +7,7 @@ class Palindrome extends React.Component {
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleReset = this.handleReset.bind(this);
         this.reverseString = this.reverseString.bind(this);
     }
 
@@ -30,6 +31,11 @@ class Palindrome extends React.Component {
         event.preventDefault();
     }
 
+    handleReset() {
+        this.setState({result : ''});
+        this.setState({value : ''});
+    }
+
     render() {
         return (<div>
             <form onSubmit = {this.handleSubmit}>
@@ -40,7 +46,9 @@ class Palindrome extends React.Component {
                 />
                 <p></p>
                 <p>
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value="Submit" className="btn btn-success" />    
+                    {'  '} 
+                    <input type="reset" value="Clear" onClick={this.handleReset} className="btn btn-primary"/>
                 </p>
             </form>
             <p>
